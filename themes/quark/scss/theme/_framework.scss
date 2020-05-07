@@ -6,18 +6,8 @@ body {
   color: $body-font-color;
 }
 
-.toast {
-  @include toast-variant($dark-color);
-  border: $border-width solid $dark-color;
-  border-radius: $border-radius;
-  color: $light-color;
-  display: block;
-  padding: $layout-spacing;
-  width: 100%;
-  
-  &.toast-warning {
+.toast.toast-warning {
   @include toast-variant($warning-color);
-  }
 }
 
 #body-wrapper {
